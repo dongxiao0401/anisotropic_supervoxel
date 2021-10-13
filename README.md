@@ -1,4 +1,4 @@
-This is the source code that generates GPU-based Anisotropic Supervoxel for video oversegmentation:
+This is the source code that generates GPU-based anisotropic supervoxel for video oversegmentation:
 
 # GPU-based Supervoxel Generation with a Novel Anisotropic Metric
 
