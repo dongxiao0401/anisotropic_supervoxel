@@ -4,11 +4,13 @@ This is the source code that generates GPU-based anisotropic supervoxel for vide
 
 We provide the source code that tested on Windows.
 
-========================================== ##Runtime Environment## The project requires: OpenGL 4.2 or later; Eigen library; OpenCV with GPU support.
+=================== Runtime Environment ===================
 
-On Windows: The GLFW3 is provided in the project, you need to download Eigen to the "includes" dir, and install OpenCV with Cuda support, configure the project by CMakeLists and specify the "OpenCV_DIR" in CMakeLists.txt.
+The project requires: OpenGL 4.2 or later; Eigen library; OpenCV with GPU support.
 
-========================================== ##Parameters##
+The GLFW3 is provided in the project, you need to download Eigen to the "includes" dir, and install OpenCV with Cuda support, configure the project by CMakeLists and specify the "OpenCV_DIR" in CMakeLists.txt.
+
+=================== Parameters ===================
 
 Specify the paths of input dataset and the output file in main.cpp.
 
