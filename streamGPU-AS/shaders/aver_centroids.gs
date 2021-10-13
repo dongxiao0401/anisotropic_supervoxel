@@ -10,7 +10,7 @@ in VS_OUT {
 out vec4 f_color;
 
 void main(){
-	gl_Position=gl_in[0].gl_Position;//这里是gl_in[0]
+	gl_Position=gl_in[0].gl_Position;
 	gl_Layer = gs_in[0].gLayer;
 	f_color = gs_in[0].gCentroid;
 	EmitVertex();

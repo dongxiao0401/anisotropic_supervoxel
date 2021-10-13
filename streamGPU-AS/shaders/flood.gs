@@ -12,8 +12,7 @@ uniform float height_ratio;
 uniform float depth_ratio;
 uniform float step;
 uniform float ratio;
-//uniform float time_ratio;
-//uniform bool floodalongtime;
+
 
 in VS_OUT {
 	vec3 gPos;
@@ -25,8 +24,8 @@ out vec4 f_color;
 
 void main(){
 	
-	gl_Position=gl_in[0].gl_Position;//这里是gl_in[0]
-	gl_Layer = int(gs_in[0].gPos.z);//z为0.5，gl_Layer=0
+	gl_Position=gl_in[0].gl_Position;
+	gl_Layer = int(gs_in[0].gPos.z);
 	vec3 curr_xyz = gs_in[0].gPos;
 	
 	
@@ -47,12 +46,12 @@ void main(){
 	
 
 	vec3 whd_ratio = vec3(width_ratio,height_ratio,depth_ratio);
-	vec3 this_slice = gs_in[0].gTex;//texture坐标
+	vec3 this_slice = gs_in[0].gTex;
 	vec3 curr_color = texture(image,this_slice).rgb;
 	
-	vec3 neighbors;//texture坐标
-	vec4 neighbor_seed;//存储的种子点信息
-	vec3 n_seed_xyz;//存储的种子点的xy
+	vec3 neighbors;
+	vec4 neighbor_seed;
+	vec3 n_seed_xyz;
 	vec3 delta;
 	vec3 seed_tex;
 	vec3 seed_color;
@@ -83,7 +82,7 @@ void main(){
 			seed_matrix_f3 = texture(seedMatrixFirst3,seed_tex).rgb;
 			seed_matrix_l3 = texture(seedMatrixLast3,seed_tex).rgb;
 			curr_pos_dist = dot(vec3(delta.x*delta.x,2*delta.x*delta.y,2*delta.x*delta.z),seed_matrix_f3)+dot(vec3(delta.y*delta.y,2*delta.y*delta.z,delta.z*delta.z),seed_matrix_l3);
-			//n_seed_xyz.z=curr_xyz.z;//相当于消去z的影响
+			//n_seed_xyz.z=curr_xyz.z;
 			//curr_pos_dist = dot(delta,delta);
 			//curr_depth_dist = (curr_xyz.z-n_seed_xyz.z)*(curr_xyz.z-n_seed_xyz.z);
 			curr_color_dist = dot((curr_color-seed_color),(curr_color-seed_color));
@@ -102,7 +101,7 @@ void main(){
 		index +=2;
 	}
 
-		//上一张slice上的9个neighbors
+
 	this_slice.z = (curr_xyz.z-step)*depth_ratio;
 	index = 0;
 	for(int i=0;i<9;i++)
@@ -136,7 +135,7 @@ void main(){
 		index +=2;
 	}
 	
-	//下一张slice上的9个neighbors
+
 	this_slice.z = (curr_xyz.z+step)*depth_ratio;
 	index = 0;
 	for(int i=0;i<9;i++)

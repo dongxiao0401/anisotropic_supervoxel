@@ -21,7 +21,7 @@ out VS_OUT {
 
 void main()
 {
-	vec4 center = texture(sum_pos,texPos);//rgba或者xyzw
+	vec4 center = texture(sum_pos,texPos);
 	if(int(center.w)==0)
 	{
 		vec3 neighbor_tex;

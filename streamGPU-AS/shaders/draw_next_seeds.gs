@@ -15,7 +15,7 @@ out vec3 f_MF3;
 out vec3 f_ML3;
 
 void main(){
-	gl_Position=gl_in[0].gl_Position;//这里是gl_in[0]
+	gl_Position=gl_in[0].gl_Position;
 	gl_Layer = int(gs_in[0].gSeedPosId.z);
 	
 	f_pos = gs_in[0].gSeedPosId;

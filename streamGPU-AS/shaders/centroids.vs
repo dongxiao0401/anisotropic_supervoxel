@@ -7,7 +7,7 @@ uniform sampler3D image;
 uniform float width_ratio;
 uniform float height_ratio;
 uniform float depth_ratio;
-uniform float ac_seeds_num;//现有的seed数量，统计-1的label个数
+uniform float ac_seeds_num;
 
 
 out VS_OUT {
@@ -23,13 +23,12 @@ void main()
 	curr_tex.x *= width_ratio;
 	curr_tex.y *= height_ratio;
 	curr_tex.z *= depth_ratio;
-	float targetId = texture(texels,curr_tex).a;//rgba或者xyzw
+	float targetId = texture(texels,curr_tex).a;
 	vs_out.gColor = texture(image,curr_tex).rgb;
 	vec3 target;
-	//target.z = floor(targetId*width_ratio*height_ratio);//如果id超出了一帧图片的大小，则将该seed写到下一帧
+	//target.z = floor(targetId*width_ratio*height_ratio);
 	if(targetId<0)
 	{
-	//如果存在-1的label，则在后面一位记录这个信息。因为需要后处理
 	target.z=0;
 	target.y = floor(ac_seeds_num*width_ratio);
 	target.x = floor(ac_seeds_num-target.y/width_ratio);

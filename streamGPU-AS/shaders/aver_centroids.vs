@@ -16,7 +16,7 @@ out VS_OUT {
 
 void main()
 {
-	vec4 center = texture(texels,texPos);//rgba或者xyzw
+	vec4 center = texture(texels,texPos);
 	center.xyz /= center.w;
 	center.xyz = floor(center.xyz)+0.5;
 	center.w = seedId;

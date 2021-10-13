@@ -5,10 +5,8 @@ layout(location=0) out vec3 FragColor;
 in vec3 f_color;
 void main()
 {
-	//vec3 RGB = floor(f_color*255.0f+0.5f);//这里是因为把归一化了的恢复到0-255
-	//FragColor = RGB;//实验观察，3d视频上，RGB分的比LAB更好
 
-	vec3 RGB = f_color;//这里就用归一化了的值，下面RGB/255就可以省略了
+	vec3 RGB = f_color;
 
 	vec3 XYZ = vec3(0.0, 0.0, 0.0);
 	vec3 temp = vec3(0.0, 0.0, 0.0);
@@ -49,8 +47,6 @@ void main()
 	//------------------------
 	float epsilon = 0.008856;	//actual CIE standard
 	float kappa = 903.3;	//actual CIE standard
-							//D50 0.96422,1.0,0.82521
-							//vec3 ref_= vec3(0.96422,1.0,0.82521);
 	vec3 ref_ = vec3(0.950456, 1.0, 1.088754);	//D65,reference white
 	vec3 r_ = vec3(XYZ.x / ref_.x, XYZ.y / ref_.y, XYZ.z / ref_.z);
 	vec3 f_ = vec3(0.0, 0.0, 0.0);
@@ -70,7 +66,7 @@ void main()
 		f_.z = (kappa*r_.z + 16.0) / 116.0;
 
 	vec3 lab_val = vec3(116.0*f_.y - 16.0, 500.0*(f_.x - f_.y), 200.0*(f_.y - f_.z));
-	//下面是把0≤L≤100, −127≤a≤127, −127≤b≤127转成L←L∗255/100,a←a+128,b←b+128
+
 	lab_val.x = lab_val.x*2.55;
 	lab_val.y = lab_val.y + 128;
 	lab_val.z = lab_val.z + 128;

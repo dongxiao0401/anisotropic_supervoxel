@@ -8,7 +8,7 @@ uniform float height_ratio;
 uniform float depth_ratio;
 out VS_OUT {
 	int  gLayer;
-	vec3 gTex;//texture坐标，texture()函数使用
+	vec3 gTex;
 } vs_out;
 
 

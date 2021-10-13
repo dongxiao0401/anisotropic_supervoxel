@@ -1,8 +1,8 @@
 #version 430
 
-layout(location = 0) in vec3 aPos;//x,y(范围0-width或height)
-layout(location = 1) in float seedId;//z(范围0-depth),id(seed的序号)
-layout(location = 2) in vec3 seedMatrixFirst3;//seed的symmetric matrix 6 unknowns
+layout(location = 0) in vec3 aPos;
+layout(location = 1) in float seedId;
+layout(location = 2) in vec3 seedMatrixFirst3;
 layout(location = 3) in vec3 seedMatrixLast3;
 
 uniform sampler3D image;

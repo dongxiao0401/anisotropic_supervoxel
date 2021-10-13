@@ -16,10 +16,10 @@ in VS_OUT {
 out vec4 f_color;
 
 void main(){
-	gl_Position=gl_in[0].gl_Position;//这里是gl_in[0]
-	gl_Layer = int(gs_in[0].gPos.z);//z为0.5，gl_Layer=0
+	gl_Position=gl_in[0].gl_Position;
+	gl_Layer = int(gs_in[0].gPos.z);
 	vec3 curr_xyz = gs_in[0].gPos;
-	vec3 curr_tex = gs_in[0].gTex;//texture坐标
+	vec3 curr_tex = gs_in[0].gTex;
 	
 	vec4 curr_seed = texture(texels,curr_tex);
 	f_color = curr_seed;

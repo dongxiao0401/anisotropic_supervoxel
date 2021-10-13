@@ -12,7 +12,7 @@ out vec3 f_pos;
 out vec3 f_color;
 
 void main(){
-	gl_Position=gl_in[0].gl_Position;//这里是gl_in[0]
+	gl_Position=gl_in[0].gl_Position;
 	gl_Layer = gs_in[0].gLayer;
 	f_pos = gs_in[0].gPos;
 	f_color = gs_in[0].gColor;
