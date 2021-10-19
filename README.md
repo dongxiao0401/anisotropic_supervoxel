@@ -17,3 +17,8 @@ Specify the paths of input dataset and the output file in main.cpp.
 The program generates supervoxel segmentation results, including txt files and pseudo-color images.
 
 Download the video datasets (SegTrackv2, BuffaloXiph) provided in LIBSVXv4.0: http://www.cs.rochester.edu/~cxu22/d/libsvx/
+
+Cite:
+If you find our code or paper useful, please consider citing
+
+Xiao Dong, Zhonggui Chen, Yong-Jin Liu, Junfeng Yao, and Xiaohu Guo, “GPU-based Supervoxel Generation with a Novel Anisotropic Metric,” IEEE Transactions on Image Processing, 2021.
