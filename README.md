@@ -23,6 +23,7 @@ Download the video datasets (SegTrackv2, BuffaloXiph) provided in LIBSVXv4.0: ht
 The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as specified by the LICENSE file.
 
 # Cite
-If you find our code or paper useful, please consider citing
-
-Xiao Dong, Zhonggui Chen, Yong-Jin Liu, Junfeng Yao, and Xiaohu Guo, “GPU-based Supervoxel Generation with a Novel Anisotropic Metric,” IEEE Transactions on Image Processing, 2021.
+@article{donggpu,
+  title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
+  author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu}
+}
