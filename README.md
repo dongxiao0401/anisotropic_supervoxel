@@ -25,6 +25,7 @@ The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as 
 # Cite
 
 @article{donggpu,
-  title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
-  author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu}
-}
+	  title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
+	  author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu},
+	}
+  
