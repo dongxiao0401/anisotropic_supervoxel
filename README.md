@@ -1,5 +1,5 @@
 # GPU-based Supervoxel Generation with a Novel Anisotropic Metric
-![](img/flowchart.png)
+![](image/flowchart.png)
 
 > **GPU-based Supervoxel Generation with a Novel Anisotropic Metric**
 >
