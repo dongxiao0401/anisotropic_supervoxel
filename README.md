@@ -29,6 +29,7 @@ The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as 
   title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
   author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu},
   journal={IEEE transactions on image processing: a publication of the IEEE Signal Processing Society}
+  year = {2021}
 }
 ```
 
