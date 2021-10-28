@@ -1,6 +1,7 @@
 # GPU-based Supervoxel Generation with a Novel Anisotropic Metric
-![](img/flowchart.png)
-1
+![](image/flowchart.png)
+
+We provide the source code that tested on Windows for the paper: 
 > **GPU-based Supervoxel Generation with a Novel Anisotropic Metric**
 >
 > Xiao Dong, 
@@ -11,7 +12,6 @@
 >
 > IEEE transactions on image processing, 2021
 
-We provide the source code that tested on Windows.
 
 ## Runtime Environment 
 ```
@@ -31,12 +31,12 @@ Download the video datasets (SegTrackv2, BuffaloXiph) provided in LIBSVXv4.0: ht
 ```
 The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as specified by the LICENSE file.
 ```
-## Cite
+## Citation
 ```
 @article{donggpu,
   title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
   author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu},
-  journal={IEEE transactions on image processing: a publication of the IEEE Signal Processing Society}
+  journal={IEEE transactions on image processing: a publication of the IEEE Signal Processing Society},
   year = {2021}
 }
 ```
