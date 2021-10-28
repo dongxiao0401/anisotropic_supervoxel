@@ -9,7 +9,7 @@
 > Junfeng Yao, 
 > Xiaohu Guo
 >
-> IEEE transactions on image processing: a publication of the IEEE Signal Processing Society, 2021
+> IEEE transactions on image processing, 2021
 
 We provide the source code that tested on Windows.
 
