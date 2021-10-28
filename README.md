@@ -1,6 +1,7 @@
 # GPU-based Supervoxel Generation with a Novel Anisotropic Metric
 ![](image/flowchart.png)
 
+We provide the source code that tested on Windows for the paper: 
 > **GPU-based Supervoxel Generation with a Novel Anisotropic Metric**
 >
 > Xiao Dong, 
@@ -11,7 +12,6 @@
 >
 > IEEE transactions on image processing, 2021
 
-We provide the source code that tested on Windows.
 
 ## Runtime Environment 
 ```
