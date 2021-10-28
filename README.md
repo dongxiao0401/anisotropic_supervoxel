@@ -10,7 +10,7 @@ We provide the source code that tested on Windows for the paper:
 > Junfeng Yao, 
 > Xiaohu Guo
 >
-> IEEE transactions on image processing, 2021
+> IEEE Transactions on Image Processing, 2021
 
 
 ## Runtime Environment 
@@ -36,7 +36,7 @@ The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as 
 @article{donggpu,
   title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
   author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu},
-  journal={IEEE transactions on image processing: a publication of the IEEE Signal Processing Society},
+  journal={IEEE Transactions on Image Processing},
   year = {2021}
 }
 ```
