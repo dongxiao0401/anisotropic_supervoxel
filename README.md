@@ -31,7 +31,8 @@ Download the video datasets (SegTrackv2, BuffaloXiph) provided in LIBSVXv4.0: ht
 ```
 The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as specified by the LICENSE file.
 ```
-## Citation
+## BibTex
+If you find our code or paper useful, please consider citing
 ```
 @article{donggpu,
   title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
