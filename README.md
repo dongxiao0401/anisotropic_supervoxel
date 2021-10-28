@@ -1,6 +1,6 @@
 # GPU-based Supervoxel Generation with a Novel Anisotropic Metric
 ![](img/flowchart.png)
-
+1
 > **GPU-based Supervoxel Generation with a Novel Anisotropic Metric**
 >
 > Xiao Dong, 
