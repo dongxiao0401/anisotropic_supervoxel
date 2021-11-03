@@ -34,11 +34,14 @@ The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as 
 ## BibTex
 If you find our code or paper useful, please consider citing
 ```
-@article{donggpu,
-  title={GPU-based Supervoxel Generation with a Novel Anisotropic Metric},
+@article{dong2021gpu,
+  title={GPU-Based Supervoxel Generation With a Novel Anisotropic Metric},
   author={Dong, Xiao and Chen, Zhonggui and Liu, Yong-Jin and Yao, Junfeng and Guo, Xiaohu},
   journal={IEEE Transactions on Image Processing},
-  year={2021}
+  volume={30},
+  pages={8847--8860},
+  year={2021},
+  publisher={IEEE}
 }
 ```
 
